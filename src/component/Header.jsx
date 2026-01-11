@@ -5,14 +5,14 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Header = ({ searchTerm, setSearchTerm }) => { 
   return (
-    <div className='w-full h-32 bg-[#ee5300] font-normal text-[#ffffff] text-[14px]'>
-      <ul className='flex gap-10 justify-end mr-80'>
-        <li>Save More on App</li> 
-        <li>Sell On Daraz</li> 
-        <li>Help & Support</li> 
-        <li>Login</li> 
-        <li>Sign Up</li> 
-        <li>زبان تبدیل کریں</li> 
+    <div className='w-full h-32 bg-[#ee5300] font-normal text-[#ffffff]  text-[14px]'>
+      <ul className='flex gap-10 justify-end mr-80 hover:text-[#ee5300} '>
+        <li className='hover:text-[#3a3a39]' >Save More on App</li> 
+        <li className='hover:text-[#3a3a39]'>Sell On Daraz</li> 
+        <li className='hover:text-[#3a3a39]'>Help & Support</li> 
+        <li className='hover:text-[#3a3a39]'>Login</li> 
+        <li className='hover:text-[#3a3a39]'>Sign Up</li> 
+        <li className='hover:text-[#3a3a39]'>زبان تبدیل کریں</li> 
       </ul>
 
       <div className="p-4 flex ml-84 mt-1 items-center">
