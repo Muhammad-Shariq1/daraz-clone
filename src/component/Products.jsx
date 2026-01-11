@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Products = ({ searchTerm = "" }) => { // default value to avoid errors
+const Products = ({ searchTerm = "" }) => { 
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -20,7 +20,6 @@ const Products = ({ searchTerm = "" }) => { // default value to avoid errors
 
   if (loading) return <div className="flex justify-center mt-20 text-xl">Loading...</div>;
 
-  // Filter products safely
   const filteredProducts = products.filter(product =>
     product.title?.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -53,7 +52,7 @@ const Products = ({ searchTerm = "" }) => { // default value to avoid errors
         </div>
       )}
 
-      {/* Modal */}
+      
       {selectedProduct && (
         <div className="fixed inset-0 z-50 flex justify-center items-center">
           <div className="absolute inset-0 bg-black/50 pointer-events-auto"></div>
